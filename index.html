@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>My Mini Portfolio Project</p>
+            <h1>ผม <span>นายนิธิศ กฤตาวาณิชย์</span><br>และนี่คือ Website Portfolio<br>ของผมเองครับ</h1>
+        </div>
+    </div>
+</div>
+<!----------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/user2.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="info">ผมชื่อ นายนิธิศ กฤตาวาณิชย์ ชื่อเล่นชื่อโดม ผมมีความชื่นชอบในด้านคอมพิวเตอร์
+                    และชอบการ coding ครับเลยอยากเข้าเรียนต่อในคณะวิศวกรรมศาสตร์ สาขา วิชาวิศวกรรมคอมพิวเตอร์
+                    เพื่อพัฒนาและต่อยอดทักษะที่มีอยู่ครับและผมมั่นใจว่าจะทำให้ดีที่สุดครับ</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">ทักษะ</p>
+                        <p class="tab-links" onclick="opentab('education')">ประวัติการศึกษา</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>PYTHON</span><br>Basic</li>
+                            <li><span>HTML CSS JavaScript</span><br>Basic</li>
+                            <li><span>C,C#,C++</span><br>Basic</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>ระดับอนุบาล-ประถมศึกษา</span><br><a href="http://www.pramanda.ac.th/home.html" target="_blank">โรงเรียนพระมารดานิจจานุเคราะห์</a></li>
+                            <li><span>ระดับมัธยมศึกษาตอนต้น</span><br><a href="http://www.bodin2.ac.th/" target="_blank">โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี) ๒</a></li>
+                            <li><span>ระดับมัธยมศึกษาตอนปลาย</span><br><a href="http://www.bodin2.ac.th/" target="_blank">โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี) ๒</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------portfolio------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Activities</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work1.jpg">
+                <div class="layer">
+                    <h3>AI BD2 CAMP</h3>
+                    <p>เรียนรู้การทำงานของโปรแกรมและบอร์ดเพื่อนำไปใช้สร้างหุ่นยนต์เดินตามเส้นสีดำ
+                        ตามคำสั่งที่ได้รับ และได้ทำงานเป็นทีมและการคิดแบบเป็นแบบแผนเพื่อนำไปสู่ความสำเร็จ
+                        สิ่งที่ผมได้รับคือการคิดแบบเป็นระบบและการวางแผนการทำงาน</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work2.jpg">
+                <div class="layer">
+                    <h3>IMAKE CAMP Microcontroller project with ESP32</h3>
+                    <p>ได้ฝึกประสบการณ์ออกแบบเซ็นเซอร์ตรวจจับสิ่งของ โดยใช้บอร์ดเรียนรู้จากการตรวจจับสิ่งของโดยใช้เซ็นเซอร์ เพื่อทำตามคำสั่งที่ได้รับมอบหมาย 
+                        และได้รับความรู้เรื่องการวางแผนการทำงานและการเขียนโปรแกรมเพื่อควบคุมบอร์ด</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work3.jpg">
+                <div class="layer">
+                    <h3>Representative Presents New Classroom of the AI Project</h3>
+                    <p>เป็นการนำเสนอห้องเรียนใหม่ที่พึ่งสร้างเสร็จให้แก่สมาคมผู้ปกครองได้รับรู้ว่าห้องที่สร้างมีอะไรบ้างและทำงานอย่างไร เช่น จอแบบสัมผัส 
+                        เครื่องพิมพ์ 3D และคอมพิวเตอร์สำหรับใช้ในการเรียนการสอน</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ----------contact--------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> ktdd2557@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0958424942</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ktdd.kritawanich/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_.nxthxit._/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name ="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows ="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-150px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwNXaM9sqXCfbN6wzsFG5zommkFaVg0fb499E0EcFPhmYqfOlYIcyIUwTTvcrRNbD-k0g/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html> 
+<div id="portfolio"></div>
